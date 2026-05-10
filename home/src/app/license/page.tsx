@@ -1,22 +1,44 @@
 import { type Metadata } from 'next'
 import Link from 'next/link'
 
+const SITE_URL = 'https://square.lndevui.com'
+const licenseTitle = 'License | Square UI'
+const licenseDescription =
+  'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates in personal and commercial projects.'
+
 export const metadata: Metadata = {
   title: 'License',
-  description:
-    'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates in personal and commercial projects.',
+  description: licenseDescription,
   alternates: { canonical: '/license' },
   openGraph: {
     type: 'article',
-    title: 'License | Square UI',
-    description:
-      'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates in personal and commercial projects.',
+    siteName: 'Square UI',
+    title: licenseTitle,
+    description: licenseDescription,
     url: '/license',
+    images: [
+      {
+        url: `${SITE_URL}/banner.png`,
+        width: 2560,
+        height: 1440,
+        alt: 'Square UI',
+      },
+    ],
   },
   twitter: {
-    title: 'License | Square UI',
-    description:
-      'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates.',
+    card: 'summary_large_image',
+    site: '@ln_dev7',
+    creator: '@ln_dev7',
+    title: licenseTitle,
+    description: licenseDescription,
+    images: [
+      {
+        url: `${SITE_URL}/banner.png`,
+        width: 2560,
+        height: 1440,
+        alt: 'Square UI',
+      },
+    ],
   },
 }
 
