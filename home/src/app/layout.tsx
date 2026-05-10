@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: [
       {
-        url: '/banner.png',
+        url: `${siteUrl}/banner.png`,
         width: 2560,
         height: 1440,
         alt: defaultTitle,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: [
       {
-        url: '/banner.png',
+        url: `${siteUrl}/banner.png`,
         width: 2560,
         height: 1440,
         alt: siteName,
