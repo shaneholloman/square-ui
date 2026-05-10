@@ -4,7 +4,20 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'License',
   description:
-    'ln-dev UI License — Terms and conditions for using Square UI components and templates.',
+    'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates in personal and commercial projects.',
+  alternates: { canonical: '/license' },
+  openGraph: {
+    type: 'article',
+    title: 'License | Square UI',
+    description:
+      'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates in personal and commercial projects.',
+    url: '/license',
+  },
+  twitter: {
+    title: 'License | Square UI',
+    description:
+      'Square UI license — terms and conditions for using the open-source layouts and shadcn/ui templates.',
+  },
 }
 
 export default function LicensePage() {
